@@ -31,7 +31,23 @@ namespace WindowsFormsApp2
             richTextBox1.AppendText(d1.ToString("N3") + "\n");
             richTextBox1.AppendText(d1.ToString("N5") + "\n");
             richTextBox1.AppendText(d1.ToString("n15") + "\n");
+            String st = "three";
+            try
+            {
+                int it = int.Parse(st);
+
+            }
+            catch
+            {
+                MessageBox.Show(st + " is not an integer");
+            }
+       
+                
+                
         }
+
+
+
 
         private void RichTextBox1_TextChanged(object sender, EventArgs e)
         {
